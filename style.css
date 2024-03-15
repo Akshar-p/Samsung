@@ -1,0 +1,836 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+
+.Container .navbar{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+}
+
+
+.Container .navbar .navbar_left ul {
+    list-style: none;
+    font-family: 'SamsungOne', arial, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+}
+
+.Container .navbar .navbar_center {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+
+.Container .navbar .navbar_center button {
+    font-family: 'SamsungOne', arial, sans-serif;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.Container .navbar .navbar_right {
+    width: 13%;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+
+
+
+.Container .navbar .navbar_right ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navbar .shop_menu {
+    position: absolute;
+    width: 672px;
+    height: 556;
+    display: flex;   
+    justify-content: space-around;
+    z-index: 1;
+    left: 20.80rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    transition: 0.5s;
+    padding-top: 25px;
+    font-size: 14px;
+}
+
+.navbar .shop:hover .shop_menu{
+    display: block;
+    display: flex;
+}
+
+
+.navbar .shop_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.navbar .mobile_menu {
+    position: absolute;
+    width: 50%;
+    display: flex;   
+    justify-content: space-around;
+    z-index: 1;
+    left: 24.50rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;  
+    padding-top: 25px;
+    font-size: 14px;
+}
+
+.navbar .mobile_menu:hover .shop {
+    display: block;
+    display: flex;
+}
+
+.navbar .mobile:hover .mobile_menu{
+    display: block;
+    display: flex;
+}
+
+
+
+.navbar .mobile_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile_menu .mobile_frames {
+    display: flex;
+    flex-wrap: wrap;
+    width: 448px;
+    height: 532px;
+    gap: 20px;
+    padding: 6px;
+    border-radius: 5px;
+    
+}
+
+.mobile_menu .photos {
+    width: 128px;
+    max-height: 144px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    background-color: #F8F8F8;
+}
+
+.mobile_menu .photos img {
+    margin: auto;
+    width: 125px;
+    height: 110px  ;
+}
+
+.navbar .tv_menu {
+    position: absolute;
+    width: 1344px;
+    height: 388px;
+    display: flex;   
+    justify-content: space-around;
+    left: 5rem;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    padding-top: 25px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.navbar .tv:hover .tv_menu{
+    display: block;
+    display: flex;
+}
+
+
+
+.navbar .tv_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.navbar .appliances_menu {
+    position: absolute;
+    width: 1344px;
+    height: 388px;
+    display: flex;   
+    justify-content: space-around;
+    z-index: 1;
+    left: 5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    padding-top: 25px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.navbar .appliances:hover .appliances_menu{
+    display: block;
+    display: flex;
+}
+
+
+.navbar .appliances_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .appliances_menu .r5 ul{
+    margin-bottom: 15px;
+}
+
+.navbar .appliances_menu .r6 ul{
+    margin-bottom: 15px;
+}
+
+.navbar .laptop_menu {
+    position: absolute;
+    width: 896px;
+    height: 388px;
+    display: flex;   
+    justify-content: space-around;
+    left: 5rem;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    padding-top: 25px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.navbar .laptop:hover .laptop_menu{
+    display: block;
+    display: flex;
+}
+
+
+
+.navbar .laptop_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .display_menu {
+    position: absolute;
+    width: 448px;
+    height: 196px;
+    display: flex;   
+    justify-content: space-around;
+    left: 51rem;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    padding-top: 25px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.navbar .display:hover .display_menu{
+    display: block;
+    display: flex;
+}
+
+
+
+.navbar .display_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.Container .video_con {
+    display: flex;
+}
+
+.Container .frame {
+    display: flex;
+    overflow:hidden;    
+    margin: auto;
+    width: 95vw;
+    height: 90vh;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.Container .left_btn {
+    margin: auto;
+}
+
+.Container img.left {
+    cursor: pointer;
+    display: flex;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.Container .right_btn {
+    margin: auto;
+}
+
+.Container  img.right {
+    cursor: pointer;
+    display: flex;
+    margin: auto 5px;
+    cursor: pointer;
+}
+
+.Container .slider {
+    display: flex;
+    background-color: #F5F4F6;
+    width: 95vw;
+    height: 90vh;
+    transition: all 1s ease;
+}
+
+.Container .slider video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.Container .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.highlights .highlights_heading {
+    font-family: 'SamsungSharpSans', arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.highlights .highlights_navbar {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.highlights .highlights_navbar button {
+    border: none;
+    font-family: 'SamsungOne', arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.highlights .highlights_photos {
+    width: 1500px;
+    height: 790px;
+    display: flex;
+    overflow: hidden;
+    gap: 15px;
+    padding: 2rem 1rem;
+    opacity: 0;
+    left: 5px;
+    position: absolute;
+    padding-left: 24px;
+    /* transform: translatex(10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out; */
+}
+
+
+.highlights .highlights_photos img {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 20px;
+    margin: 5px 0px;
+    position: relative;
+}
+
+.highlights .highlights_photos .r1 img{
+    width: 718px;
+    height: 718px;
+    object-fit: contain;
+}
+
+.highlights .live_photos .r1 img{
+    width: 330px;
+    height: 684px;
+    object-fit: contain;
+}
+
+.r1_news_text .pre1{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    font-size: 30px;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+
+.r1_news_text .pre2 {
+    position: absolute;
+    font-weight: 2px;
+    font-size: 15px;
+    top: 85%;
+    left:19%;
+    margin-top: 5px;
+}
+
+.r1_tv_text .pre1{
+    position: absolute;
+    background-color: #F4F4F4;
+    top: 72%;
+    left: 20%;
+    font-size: 30px;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+
+.r1_tv_text .pre2 {
+    position: absolute;
+    background-color: #F4F4F4;
+    font-weight: 2px;
+    font-size: 15px;
+    top: 82%;
+    left:16%;
+    margin-top: 5px;
+}
+
+
+.highlights .highlights_photos .r2 .col1 {
+    padding: 0px 20px 24px 0px;
+}
+
+.col1_news_text .pre1{
+    position: absolute;
+    top: 33%;
+    left: 55%;
+    background-color: #9FACBC;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.col1_news_text .pre2 {
+    position: absolute;
+    background-color: #9FACBC;
+    font-weight: lighter;
+    font-size: 14px;
+    top:39.50%;
+    left: 52%; 
+}
+
+.col1_mobile_text .pre1{
+    position: absolute;
+    top: 34%;
+    left: 54.50%;
+    background-color: #F7F7F7;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.col1_mobile_text .pre2 {
+    position: absolute;
+    background-color: #E6E7E5;
+    font-weight: lighter;
+    font-size: 14px;
+    top:39%;
+    left: 54%; 
+}
+
+.col1_tv_text .pre1{
+    position: absolute;
+    top: 34%;
+    left: 54.50%;
+    background-color: #F7F7F7;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.col1_tv_text .pre2 {
+    position: absolute;
+    background-color: #E6E7E5;
+    font-weight: lighter;
+    font-size: 14px;
+    top:39%;
+    left: 54%; 
+}
+
+
+.highlights .highlights_photos .r2 .col2 {
+    padding: 0px 24px 24px 0px;
+}
+
+.col2_news_text .pre1{
+    position: absolute;
+    top: 80%;
+    left: 56%;
+    background-color: #F3F3F3;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.col2_news_text .pre2 {
+    position: absolute;
+    background-color: #F3F3F3;
+    font-weight: lighter;
+    font-size: 14px;
+    top:86%;
+    left: 51.50%; 
+}
+
+.col2_mobile_text .pre1{
+    position: absolute;
+    top: 80%;
+    left: 56%;
+    background-color: #0E130C;
+    color: #FFFFFF;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.col2_mobile_text .pre2 {
+    position: absolute;
+    background-color: #0E130C;
+    color: #FFFFFF;
+    font-size: 12px;
+    top:86%;
+    left: 53%; 
+}
+
+.col2_tv_text .pre1{
+    position: absolute;
+    top: 80%;
+    left: 56%;
+    background-color: #0E130C;
+    color: #FFFFFF;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.col2_tv_text .pre2 {
+    position: absolute;
+    background-color: #0E130C;
+    color: #FFFFFF;
+    font-size: 12px;
+    top:86%;
+    left: 53%; 
+}
+
+.highlights .highlights_photos .r2 .col1 img {
+    width: 330px;
+    height: 330px;
+    object-fit: contain;
+}
+
+.highlights .highlights_photos .r2 .col2 img {
+    width: 330px;
+    height: 330px;
+    object-fit: contain;
+}
+
+.highlights .highlights_photos .r3 .c1 {
+    padding: 0px 24px 24px 0px;
+}
+
+.c1_news_text .pre1{
+    position: absolute;
+    font-size: 18px;
+    top: 35%;
+    left: 77.50%;
+    background-color: #F3F3F3;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.c1_news_text .pre2 {
+    position: absolute;
+    background-color: #F3F3F3;
+    font-weight: lighter;
+    font-size: 14px;
+    top:39.50%;
+    left: 79%; 
+}
+
+.c1_mobile_text .pre1{
+    position: absolute;
+    font-size: 18px;
+    top: 34%;
+    left: 81.30%;
+    background-color: #F6F6F6;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.c1_mobile_text .pre2 {
+    position: absolute;
+    background-color: #F6F6F6;
+    font-weight: lighter;
+    font-size: 14px;
+    top:40%;
+    left: 75.70%; 
+}
+
+.c1_tv_text .pre1{
+    position: absolute;
+    font-size: 18px;
+    top: 34%;
+    left: 81.30%;
+    background-color: #F6F6F6;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.c1_tv_text .pre2 {
+    position: absolute;
+    background-color: #F6F6F6;
+    font-weight: lighter;
+    font-size: 14px;
+    top:40%;
+    left: 75.70%; 
+}
+
+.highlights .highlights_photos .r3 .c2 {
+    padding: 0px 24px 24px 0px;
+}
+
+.c2_news_text pre{
+    position: absolute;
+    font-size: 18px;
+    top: 82%;
+    left: 79.30%;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.c2_mobile_text .pre1{
+    position: absolute;
+    font-size: 18px;
+    top: 80%;
+    left: 81.30%;
+    background-color: #FFFFFF;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.c2_mobile_text .pre2 {
+    position: absolute;
+    background-color: #FFFFFF;
+    font-weight: lighter;
+    font-size: 13px;
+    top: 86%;
+    left: 75.60%; 
+}
+
+.c2_tv_text .pre1{
+    position: absolute;
+    font-size: 18px;
+    top: 80%;
+    left: 81.30%;
+    background-color: #FFFFFF;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.c2_tv_text .pre2 {
+    position: absolute;
+    background-color: #FFFFFF;
+    font-weight: lighter;
+    font-size: 13px;
+    top: 86%;
+    left: 75.60%; 
+}
+
+
+
+.highlights .highlights_photos .r3 .c1 img {
+    width: 330px;
+    height: 330px;
+    object-fit: contain;
+}
+
+.highlights .highlights_photos .r3 .c2 img {
+    width: 330px;
+    height: 330px;
+    object-fit: contain;
+}
+
+.highlights .highlights_photos .r4 .c3 {
+    padding: 0px 24px 24px 0px;
+}
+
+.highlights .highlights_photos .r4 .c4 {
+    padding: 0px 24px 24px 0px;
+}
+
+.highlights .highlights_photos .r4 .c3 img {
+    width: 330px;
+    height: 330px;
+    object-fit: contain;
+}
+
+.highlights .highlights_photos .r4 .c4 img {
+    width: 330px;
+    height: 330px;
+    object-fit: contain;
+}
+
+
+.highlights .highlights_photos.active_news {
+    opacity: 1;
+    transform: translatex(0px);
+}
+
+.highlights .highlights_photos.active_mobile {
+    opacity: 1;
+    transform: translatex(0px);
+}
+
+.highlights .highlights_photos.active_tv {
+    opacity: 1;
+    transform: translatex(0px);
+}
+
+.highlights .highlights_photos.active_appliances {
+    opacity: 1;
+    transform: translatex(0px);
+}
+
+.highlights .highlights_photos.active_galaxy {
+    opacity: 1;
+    transform: translatex(0px);
+}
+
+.highlights .highlights_photos.active_live {
+    opacity: 1;
+    transform: translatex(0px);
+    
+}
+
+.gap {
+    width: 1420px;
+    height: 800px;
+}
+
+.Container .mobile_container {
+    margin: 1rem auto;
+    position: relative;
+}
+
+.Container .mobile_container .mobile_con_header {
+    font-family: 'SamsungSharpSans', arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2rem;
+    position: absolute;
+    top: 0rem;
+    left: 46.50%;
+}
+
+.Container .mobile_container .mobile_con_header h2 {
+    background-color: #F4F4F4;
+
+}
+
+.Container .mobile_navbar {
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    background-color: #F4F4F4;
+    position: absolute;
+    width: 66%;
+    top: 5rem;
+    left: 18%;
+}
+
+
+.Container .mobile_navbar button {
+    background-color: #F4F4F4;
+    border: none;
+    font-family: 'SamsungOne', arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Container .mobile_photos {
+    display: flex;
+    width: 1440px;
+    height: 810px;
+    margin: auto;
+    border: 2px solid black ;
+    overflow: hidden;
+}
+
+.Container .mobile_photos img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width : 1350px) {
+
+    .Container .navbar .navbar_center {
+        width: 60%;
+        gap: 6px;
+        margin: 0;
+        
+    }
+    
+    .Container .navbar .navbar_right {
+        /* border: 2px solid; */
+        width: 15%;
+        
+    }
+}
+
+@media screen and (max-width : 1220px) {
+    .Container .navbar .navbar_center {
+        display: none; 
+    }
+
+    .Container .navbar .navbar_right {
+        display: none; 
+    }
+
+}
